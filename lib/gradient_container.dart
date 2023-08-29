@@ -1,5 +1,7 @@
+import "package:abbos_flutter/dice.roller.dart";
 import "package:flutter/material.dart";
-import "package:abbos_flutter/styled_text.dart";
+
+// import "package:abbos_flutter/styled_text.dart";
 
 var begingradient = Alignment.topLeft;
 var endgradient = Alignment.bottomCenter;
@@ -8,8 +10,13 @@ var endgradient = Alignment.bottomCenter;
 
 class CustomClassAbbos extends StatelessWidget {
   const CustomClassAbbos(this.color1, this.color2, {super.key});
+  const CustomClassAbbos.purple({super.key})
+      : color1 = Colors.deepOrange,
+        color2 = Colors.deepPurple;
+
   final Color color1;
   final Color color2;
+
   @override
   Widget build(context) {
     return Container(
@@ -17,8 +24,7 @@ class CustomClassAbbos extends StatelessWidget {
           gradient: LinearGradient(
               colors: [color1, color2], begin: begingradient, end: endgradient),
         ),
-        child: const Center(
-            child: Styledtextcha("nima gapla endi bratishkachala")));
+        child: const Center(child: DiceRoller()));
   }
 }
 

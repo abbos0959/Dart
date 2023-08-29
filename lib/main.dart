@@ -9,6 +9,5 @@ void main() {
           //   colors: [Colors.black, Colors.black],
           // ))));
 
-          body: CustomClassAbbos(Color.fromARGB(255, 181, 17, 17),
-              Color.fromARGB(255, 17, 228, 55)))));
+          body: CustomClassAbbos.purple())));
 }
