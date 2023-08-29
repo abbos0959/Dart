@@ -1,10 +1,11 @@
 import "package:flutter/material.dart";
 
-class Styledtext extends StatelessWidget {
-  const Styledtext({super.key});
+class Styledtextcha extends StatelessWidget {
+  const Styledtextcha(this.text, {super.key});
+  final String text;
   @override
   Widget build(context) {
-    return const Text("abbos aka  nima gapla",
-        style: TextStyle(color: Colors.white, fontSize: 29));
+    return Text(text,
+        style: const TextStyle(color: Colors.white, fontSize: 29));
   }
 }
